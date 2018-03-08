@@ -1,97 +1,38 @@
-footer {
-    height: 290px;
-    width: 100%;
-    background-color: #4c7bd9;
-    color: white;
-    text-align: center;
-    position:absolute;
-    bottom:0;
-}
-
-.social {
-  width: 5%;
-}
 
 h1 {
   font-family: 'Pacifico', cursive;
   text-align:center;
 }
 
-h2 {
-  font-size: 2rem;
-  margin: 0.2em 0;
-}
-
 p {
   font-family: 'Oxygen Mono';
 }
-.cd-switch {
-  padding: 50px 0;
+
+footer {
+    height: 300px;
+    width: 100%;
+    background-color: #4c7bd9;
+    color: white;
+    text-align: center;
+    position: absolute;
+    bottom: -60px;
+
+}
+.q1, .q2, .q3, .q4, .q5 {
+ display: block;
+ margin: 0 auto;
+ text-align:center;
+}
+h2 {
   text-align: center;
+  font-family: 'Nova Mono', monospace;
+  font-size: 30px;
+}
+.social {
+  width:5%;
 }
 
-.switchFilter {
-  width: 0;
-  display: inline-block;
-  background-color: #4c7bd9;
-  position: absolute;
-  left: 0;
-  opacity: 0;
-  top: 0;
-  bottom: 0;
-  z-index: -1;
-  -webkit-transition: all 0.4s cubic-bezier(0, 0, 0.25, 1);
-  -moz-transition: all 0.4s cubic-bezier(0, 0, 0.25, 1);
-  transition: all 0.4s cubic-bezier(0, 0, 0.25, 1);
-}
-
-label {
-  cursor: pointer;
-  text-transform: uppercase;
-  border: 1px solid #3D4349;
-  width: 85px;
-  padding: 15px 0;
-  text-align: center;
-  display: inline-block;
-  -webkit-transition: all 0.4s;
-  -moz-transition: all 0.4s;
-  transition: all 0.4s;
-  margin-right: 10px;
-}
-
-.switch {
-  position: absolute;
-  display: inline-block;
-  left: 50%;
-  right: auto;
-  -webkit-transform: translateX(-50%);
-  -moz-transform: translateX(-50%);
-  -ms-transform: translateX(-50%);
-  -o-transform: translateX(-50%);
-  transform: translateX(-50%);
-  z-index: 1;
-  margin: 2em 0;
-}
-.switch input[type="radio"] {
-  visibility: hidden;
-  position: absolute;
-  height: 100%;
-}
-.switch input[type="radio"]#yes:checked ~ label[for="yes"] {
-  color: white;
-  border: 1px solid #4c7bd9;
-}
-.switch input[type="radio"]#yes:checked ~ .switchFilter {
-  left: 0;
-  opacity: 1;
-  width: 87px;
-}
-.switch input[type="radio"]#no:checked ~ label[for="no"] {
-  color: white;
-  border: 1px solid #4c7bd9;
-}
-.switch input[type="radio"]#no:checked ~ .switchFilter {
-  left: 100px;
-  width: 87px;
-  opacity: 1;
+#submit {
+  display: block;
+  margin: 0 auto;
 }
