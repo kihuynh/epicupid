@@ -10,3 +10,7 @@ require('pg')
 get('/') do
   erb(:home)
 end
+
+get('/register') do
+  erb(:register)
+end

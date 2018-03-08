@@ -1,0 +1,41 @@
+<link rel="stylesheet" href="/css/styles2.css">
+
+<img src="../img/epicupidlogo.png" class="epicupidlogo">
+
+
+<div class="container" id="register">
+  <h1>Registration</h1>
+	<div id="formWrapper">
+		<div id="form">
+			<form action="/profile" method="post">
+				<div class="form-item">
+					<select name="track" class="form-control" id="select">
+						<option disabled selected>-select-</option>
+						<option value="Ruby">Ruby</option>
+						<option value="C#">C#</option>
+						<option value="Java">Java</option>
+						<option value="React">React</option>
+						<option value="Design">Design</option>
+					</select>
+				</div>
+				<div class="form-item">
+					<input type="text" name="first_name" id="first_name" class="form-style" autocomplete="off" placeholder="first name"/>
+				</div>
+				<div class="form-item">
+					<input type="text" name="last_name" id="last_name" class="form-style" placeholder="last name"/>
+				</div>
+				<div class="form-item">
+					<input type="email" name="email" id="email" class="form-style" autocomplete="off" placeholder="email"/>
+				</div>
+				<div class="form-item">
+					<input type="text" name="github" id="github" class="form-style" autocomplete="off" placeholder="github URL"/>
+				</div>
+
+				<div class="form-item">
+					<button id="invis-btn"><input type="submit" class="login pull-left" value="Sign Up"></button>
+				<div class="clear-fix"></div>
+				</div>
+			</form>
+		</div>
+	</div>
+</div>
