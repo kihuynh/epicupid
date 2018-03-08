@@ -61,6 +61,10 @@ footer {
     position: absolute;
 }
 
+p {
+  font-family: 'Oxygen Mono';
+
+}
 .social {
   width:5%;
 }

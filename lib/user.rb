@@ -1,5 +1,6 @@
 class User < ActiveRecord::Base
   has_many(:surveys)
+  private
 
   validates(:track,{:presence => true})
   validates(:first_name, {:presence => true, :length => {maximum: 50}})
