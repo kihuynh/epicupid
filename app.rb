@@ -14,3 +14,23 @@ end
 get('/register') do
   erb(:register)
 end
+
+post('/register') do
+  track = params.fetch('track')
+  first_name = params.fetch('first_name')
+  last_name = params.fetch('last_name')
+  email = params.fetch('email')
+  github = params.fetch('github')
+  @new_user = User.create({:track => track, :first_name => first_name, :last_name => last_name, :password => password, :email => email, :github => github, :id => nil})
+  erb(:register)
+end
+
+get('/survey') do
+  @users = User.all
+  erb(:survey)
+end
+
+post('/survey') do
+  @users = User.all
+  erb(:survey)
+end
