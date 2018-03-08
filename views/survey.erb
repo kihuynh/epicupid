@@ -1,26 +1,16 @@
 <link rel="stylesheet" href="/css/styles3.css">
 
-<h1>Tell Us About Yourself!</h1>
-<form action="/users" method="post">
-  <div class="cd-switch">
-    <h2>Do you prefer coding in the fast lane?</h2>
-    <div class="switch">
-      <input type="radio" name="question1" id="yes" value="yes" checked>
-      <label for="yes">Yes</label>
-      <input type="radio" name="question1" id="no" value="no">
-      <label for="no">No</label>
-      <span class="switchFilter"></span>
-    </div>
+<h1>Tell us about yourself!</h1>
+<h2>Do you like to drive in the coding fast lane?</h2>
+<form action="/survey2" method="post">
+  <input type="radio" name="question1" id="yes" value=1 checked />
+  <input type="radio" name="question1" id="no" value=2>
+  <div class="switch">
+    <label for="yes">Yes</label>
+    <label for="no">No</label>
+    <span></span>
   </div>
-  <div class="cd-switch">
-    <h2>Do you like to take breaks throughout the day?</h2>
-    <div class="switch">
-      <input type="radio" name="question1" id="yes" value="yes" checked>
-      <label for="yes">Yes</label>
-      <input type="radio" name="question1" id="no" value="no">
-      <label for="no">No</label>
-      <span class="switchFilter"></span>
-    </div>
-  </div>
-  <button type="submit" name="button" class="btn btn-info">Submit</button>
+  <br>
+  <button type="submit" class="btn btn-info next">Next</button>
+
 </form>
