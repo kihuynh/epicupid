@@ -1,1 +1,23 @@
-<%= @new_user.first_name %>
+<link rel="stylesheet" href="/css/styles4.css">
+<script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+
+
+	<h1>my</h1>
+	<img src="../img/epicupidlogo.png" class="epicupidlogo">
+<div class="container">
+	<hr>
+	<div class="col-md-4">
+	</div>
+	<div class="col-md-4">
+    <h2><%=@user.first_name %></h2>
+		<h2><%=@user.last_name %></h2>
+		<h3>Track: </h3><p><%=@user.track %></p>
+    <h3><span class="glyphicon glyphicon-envelope"></span></h3> <p><%=@user.email %></p>
+		<h2><i class="fab fa-github"></i></h2>
+		<p><a href="<%=@user.github %>"><%=@user.github %></a></p>
+		<br>
+    <a href="/survey/<%= @user.id %>" class="btn btn-info">Match Me</a>
+  </div>
+	<div class="col-md-4" id="match">
+	</div>
+	</div>

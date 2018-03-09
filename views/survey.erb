@@ -1,19 +1,20 @@
 <link rel="stylesheet" href="../css/styles3.css">
 
 <h1>Tell us about yourself!</h1>
-<form action="/users" method="post" id="survey">
+<form action="/users/<%= @user.id %>" method="post" id="survey">
   <div class="q1">
     <h2>Do you like to drive in the coding fast lane?</h2>
     <label for="q1">No</label>
-    <input type="radio" name="question1" class="btn btn-danger" id='q1-no' value=0>
-    <input type="radio" name="question1" class="btn btn-info" id='q1-yes' value=1>
+    <input type="radio" name="question1" class="btn btn-danger" id='q1-no' value="I like driving in the slow lane">
+    <input type="radio" name="question1" class="btn btn-info" id='q1-yes' value="I like driving in the fast lane">
     <label for="q1">Yes</label>
   </div>
+  <input id="user_id" name="user_id" type="hidden" value="<%=@new_user_id %>">
   <div class="q2">
     <h2>Do you like to take breaks throughout the day?</h2>
     <label for="q2">No</label>
-    <input type="radio" name="question2" class="btn btn-danger" id='no' value=0>
-    <input type="radio" name="question2" class="btn btn-info" id='yes' value=1>
+    <input type="radio" name="question2" class="btn btn-danger" id='no' value="I don't like to take breaks">
+    <input type="radio" name="question2" class="btn btn-info" id='yes' value="I like to take breaks">
     <label for="q2">Yes</label>
   </div>
   <div class="q3">
@@ -26,15 +27,15 @@
   <div class="q4">
     <h2>Do you like to make your own interpretation of the day's curriculum?</h2>
     <label for="q4">No</label>
-    <input type="radio" name="question4" class="btn btn-danger" id='no' value=0>
-    <input type="radio" name="question4" class="btn btn-info" id='yes' value=1>
+    <input type="radio" name="question4" class="btn btn-danger" id='no' value="I like to stick to the curriculum">
+    <input type="radio" name="question4" class="btn btn-info" id='yes' value="I like to be creative">
     <label for="q4">Yes</label>
   </div>
   <div class="q5">
     <h2>Do you like to use visual aids/whiteboards?</h2>
     <label for="q5">No</label>
-    <input type="radio" name="question5" class="btn btn-danger" id='no' value=0>
-    <input type="radio" name="question5" class="btn btn-info" id='yes' value=1>
+    <input type="radio" name="question5" class="btn btn-danger" id='no' value="I do not like using visual aids">
+    <input type="radio" name="question5" class="btn btn-info" id='yes' value="I like using visual aids">
     <label for="q5">Yes</label>
   </div>
   <br>
